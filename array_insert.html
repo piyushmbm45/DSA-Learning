@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Array Insert</title>
+    <script>
+        let data = [90, 5, 6, 8, 2, 4, 67, 89]
+        let newElement = 100
+        let itsPosition = 2
+        // reverse loop shift elements in forward direction after position
+        for (let index = data.length - 1; index >= 0; index--) {
+            const element = data[index];
+            console.warn(element);
+            if (index >= itsPosition) {
+                data[index + 1] = data[index]
+                if (index === itsPosition) {
+                    data[itsPosition] = newElement
+                }
+            }
+        }
+        console.warn(data);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
