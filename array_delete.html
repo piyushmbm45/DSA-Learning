@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Array_Delete</title>
+    <script>
+        let data = [7, 67, 23, 11, 34, 65, 76, 90, 65]
+        let delPosition = 2
+        for (let index = 0; index < data.length; index++) {
+            if (index >= delPosition && index < data.length - 1) {
+                if (index === data.length - 1) {
+                    console.log('hello');
+                } else {
+                    data[index] = data[index + 1]
+                }
+            }
+        }
+        data.length = data.length - 1;
+        console.log(data);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
